@@ -1,0 +1,14 @@
+Flask==0.12.2
+cf-deployment-tracker==1.0.4
+cloudant==2.4.0
+numpy==1.14.2
+Pillow==5.1.0
+opencv-contrib-python==3.4.0.12
+opencv-python==3.4.0.12
+os-win==4.0.0
+pandas==0.22.0
+scikit-learn==0.19.1
+scipy==1.0.1
+sklearn==0.0
+z3==0.2.0
+joblib==0.11

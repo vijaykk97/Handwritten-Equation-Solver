@@ -1,0 +1,5 @@
+---
+applications:
+ - name: EquationSolving
+   random-route: true
+   memory: 128M

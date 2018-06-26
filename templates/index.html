@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ansh Hand Written Equation Solving</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+              .container-contact100 {
+          width: 100%;  
+          min-height: 100vh;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+          background: #a64bf4;
+            background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
+            background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
+            background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
+            background: linear-gradient(45deg, #00dbde, #fc00ff);
+          
+        }
+
+        .wrap-contact100 {
+          width: 350px;
+          background: #fff;
+          border-radius: 10px;
+          overflow: hidden;
+          padding: 42px 55px 45px 55px;
+        }
+    </style>
+  </head>
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand" style="color: white">Hand Written Equation Solving</a>
+      </nav>
+      <br>
+      <div class="container">
+          <div class="container-contact100">
+              <div class="wrap-contact100">
+                <form action="/predict" method="post" enctype="multipart/form-data" style="position: relative;">
+                  <div class="form-group">
+                      <label><strong><h4>Select your Image File</h4> </strong> </label><br>
+                      <input type="file" name="image" value="Upload">
+                      </div>
+                     
+                  <input type="submit" class="btn btn-dark" value="Predict" style="    margin-left: 16px;
+                  padding: 11px;
+                  padding-left: 77px;
+                  padding-right: 68px;"><br><br><strong><h2 style="margin-left: 100px;">{% if label %} {{ label }} {% endif %}</h2> </strong>
+                 </form>
+                 <br>
+                 <div class="alert alert-danger" role="alert">
+                    If you don't get your desired result, please try read the instructions below!
+                </div>
+              </div>
+            </div>
+      </div>
+      <br>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-10">
+                <div class="alert alert-dark" role="alert">
+                    <strong><h4>Instructions</h4></strong>
+                    
+                  </div>
+                  <div class="alert alert-light" role="alert">
+                      1. Background should be white<br>
+                      2. Try not to select images with too thin digits<br>
+                      3. Digits should be clear <br>
+                      4. Check for the Image we have provided !
+                  </div>
+                
+            </div>
+            <div class="col">
+
+            </div>
+         </div>
+         <div class="row">
+             <div class="col">
+
+             </div>
+            <div class="col-12">
+                
+            </div>
+            <div class="col">
+
+            </div>
+         </div>
+      </div>
+      
+      <!-- <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-10">
+            <img src="equation.jpg" alt="" srcset="" style="position: absolute;" width="80%" height="400px">
+                <form action="/predict" method="post" enctype="multipart/form-data" style="position: relative;">
+                    <div class="form-group">
+                            <label>Select your Image File</label>
+                            <input type="file" name="image" value="Upload">
+                          </div>
+                    
+                    <input type="submit" class="btn btn-primary" value="Predict"><br> {% if label %} {{ label }} {% endif %}
+               </form>
+        </div>
+        <div class="col">
+
+        </div>
+      </div> -->
+
+      
+
+    
+    
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
